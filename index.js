@@ -17,7 +17,7 @@ db.connect((error)=>{
 
 var port=process.env.PORT||8080;
 var app = express();
-app.use(bodyparser.urlencoded({exntended:false}));
+app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json());
 
 app.post('/createOrder',function(req,res){
